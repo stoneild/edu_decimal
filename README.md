@@ -18,12 +18,11 @@ Decimal number is implemented as a four-element array of 32-bit signed integers 
 
 ## Dependencies
 To build and run this project, you will need the following dependencies:
-- gcc (to compile object files);
-- ar from binutils (to create a static library);
-- ranlib from binutils (to generate an index to an archive);
-- make (to build the project from the Makefile);
-- checkmk from package check (to generate C unit tests);
-- lcov (for the coverage report).
+- gcc: to compile object files;
+- binutils: to create a static library and to generate an index to an archive;
+- make: to build the project from the Makefile;
+- checkmk from package check: to generate C unit tests;
+- lcov: for the coverage report.
 
 ## Makefile Targets
 The Makefile defines the following goals:
@@ -83,7 +82,7 @@ Return value - code error:
 - 0 - OK
 - 1 - convertation error
 
-### Another functions
+### Additional functions
 
 | Description | Function                                                         |
 | ------ |------------------------------------------------------------------|
