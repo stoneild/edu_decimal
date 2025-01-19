@@ -1,6 +1,6 @@
-# edu_decimal
+# pet_decimal
 ## Overview
-edu_decimal is a project created for educational purposes.
+pet_decimal is a project created for educational purposes.
 
 This project implements the static library s21_decimal.a in the C programming language to work with the "decimal" type.
 
