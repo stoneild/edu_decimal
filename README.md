@@ -4,7 +4,7 @@ edu_decimal is a project created for educational purposes.
 
 This project implements the static library s21_decimal.a in the C programming language to work with the "decimal" type.
 
-The binary representation of a Decimal number consists of a 1-bit sign, a 96-bit integer number, and a scaling factor used to divide the integer number and specify what portion of it is a decimal fraction. The scaling factor is implicitly the number 10, raised to an exponent ranging from 0 to 28.
+The binary representation of a decimal number consists of a 1-bit sign, a 96-bit integer number, and a scaling factor used to divide the integer number and specify what portion of it is a decimal fraction. The scaling factor is implicitly the number 10, raised to an exponent ranging from 0 to 28.
 
 Decimal number is implemented as a four-element array of 32-bit signed integers (`int bits[4];`).
 
@@ -38,7 +38,7 @@ Use the following command to execute the targets in the src directory:
 make [goal]
 ```
 
-## The following matrix operations have been implemented
+## The following operations have been implemented
 ### Arithmetic Operators
 
 | Operator name | Operators  | Function                                                                           | 
@@ -86,10 +86,10 @@ Return value - code error:
 
 | Description | Function                                                         |
 | ------ |------------------------------------------------------------------|
-| Rounds a specified Decimal number to the closest integer toward negative infinity. | int s21_floor(s21_decimal value, s21_decimal *result)            |
+| Rounds a specified decimal number to the closest integer toward negative infinity. | int s21_floor(s21_decimal value, s21_decimal *result)            |
 | Rounds a decimal value to the nearest integer. | int s21_round(s21_decimal value, s21_decimal *result)    |
-| Returns the integral digits of the specified Decimal; any fractional digits are discarded, including trailing zeroes. | int s21_truncate(s21_decimal value, s21_decimal *result) |
-| Returns the result of multiplying the specified Decimal value by negative one. | int s21_negate(s21_decimal value, s21_decimal *result)   |
+| Returns the integral digits of the specified decimal; any fractional digits are discarded, including trailing zeroes. | int s21_truncate(s21_decimal value, s21_decimal *result) |
+| Returns the result of multiplying the specified decimal value by negative one. | int s21_negate(s21_decimal value, s21_decimal *result)   |
 
 Return value - code error:
 - 0 - OK
